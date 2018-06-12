@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nguyenthanhluong.myapplication.MainActivity"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    //com.google.android.gms.maps.MapFragment ko có sãn phải tự gõ
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:isScrollContainer="false"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="276dp"
+            android:layout_height="55dp"
+            android:layout_gravity="left"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0.05"
+            android:ems="10"
+            android:hint="Nhập từ khóa"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@+id/myMap"
+            app:layout_constraintHorizontal_bias="0.322"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.016" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="45dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:onClick="Search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.824"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.015"
+            app:srcCompat="@android:drawable/ic_menu_search"
+            android:background="#8a33e2"/>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/myMap"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="445dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="#8a33e2"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/txtTextMsg"
+            android:layout_width="131dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.19"
+            android:hint="Nhập thông tin"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btnketxe"
+            android:clickable="true"
+            android:onClick="onMarker" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="#6425a4"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.delaroystudios.placepicker.MainActivity">
+    <item
+        android:id="@+id/item1"
+        android:orderInCategory="102"
+        android:title="Xem kinh độ, vĩ độ" />
+    <item
+        android:id="@+id/itexit"
+        android:orderInCategory="103"
+        android:title="Thoát" />
+    <item
+        android:id="@+id/iddiahinh"
+        android:icon="@drawable/icondiahinh"
+        app:showAsAction="always"
+        android:title="Chế độ xem bản đồ">
+        <menu>
+            <item
+                android:id="@+id/mapTypeNone"
+                android:title="@string/map_type_none"/>
+            <item
+                android:id="@+id/mapTypeNormal"
+                android:title="@string/map_type_normal"/>
+            <item
+                android:id="@+id/mapTypeTerrain"
+                android:title="@string/map_type_terrain"/>
+            <item
+                android:id="@+id/idvetinh"
+                android:title="Vệ tinh">
+                <menu>
+                    <item
+                        android:id="@+id/mapTypeSatellite"
+                        android:title="@string/map_type_satellite"/>
+                    <item
+                        android:id="@+id/mapTypeHybrid"
+                        android:title="@string/map_type_hybrid"/>
+                </menu>
+
+            </item>
+
+        </menu>
+    </item>
+</menu>

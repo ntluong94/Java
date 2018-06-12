@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Wmaps</string>
+    //get key tại https://developers.google.com/maps/documentation/android-api/signup?hl=vi
+    <string name="map.api.key">AIzaSyC70Dgw4XKuO_xlJ9U-bikWOGMr1jHKQVM</string>
+    <string name="map_type_none">Không dùng</string>
+    <string name="map_type_normal">Bình Thường</string>
+    <string name="map_type_terrain">Địa hình</string>
+    <string name="map_type_satellite">Không nhãn</string>
+    <string name="map_type_hybrid">Có nhãn</string>
+</resources>
